@@ -26,7 +26,7 @@ export const ProductCard = ({ music }) => {
           }}
         >
           <Image
-            src={music.img}
+            src={music?.img}
             layout="fill"
             objectFit="cover"
             objectPosition="center"

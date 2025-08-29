@@ -11,7 +11,8 @@ export const ProductCard = ({ music }) => {
           bgcolor: "#FFFFFF",
           borderRadius: "28px",
           p: "7px",
-          boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+          border: "1px solid #e8e8e8",
+          // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
         }}
       >
         <Box

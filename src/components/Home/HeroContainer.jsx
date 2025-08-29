@@ -13,7 +13,7 @@ export const HeroContainer = () => {
         }}
       >
         <Typography
-          sx={{ fontSize: "42px", fontWeight: "bold" }}
+          sx={{ fontSize: { xs: "32px", md: "42px" }, fontWeight: "bold" }}
           className="inter"
         >
           Curated for{" "}
@@ -31,7 +31,11 @@ export const HeroContainer = () => {
         </Typography>
 
         <Typography
-          sx={{ fontSize: "42px", fontWeight: "bold", mt: -2 }}
+          sx={{
+            fontSize: { xs: "32px", md: "42px" },
+            fontWeight: "bold",
+            mt: { xs: -1, md: -2 },
+          }}
           className="inter"
         >
           Shipped by{" "}
@@ -48,11 +52,19 @@ export const HeroContainer = () => {
           </Box>
         </Typography>
         <Box sx={{ my: 3 }}>
-          <Typography className="inter" textAlign="center">
+          <Typography
+            className="inter"
+            textAlign="center"
+            sx={{ fontSize: { xs: "14px", md: "16px" } }}
+          >
             Discover the most loved products from Amazon — handpicked and
             approved by shoppers like you.
           </Typography>
-          <Typography className="inter" textAlign="center">
+          <Typography
+            className="inter"
+            textAlign="center"
+            sx={{ fontSize: { xs: "14px", md: "16px" }, my: { xs: 1, md: 0 } }}
+          >
             🎯 No endless scrolling. No confusion. Just curated picks that save
             you time.
           </Typography>

@@ -1,12 +1,16 @@
 import { MUSIC } from "@/constant";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { ProductCard } from "../Cards/ProductCard";
+
+//Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 export const ProductCategory = ({ title }) => {
   return (
     <>
-      <Box>
+      <Box sx={{ mb: 10 }}>
         <Box
           sx={{
             display: "flex",
@@ -15,12 +19,12 @@ export const ProductCategory = ({ title }) => {
           }}
         >
           <Typography
-            sx={{ fontSize: { xs: "20px", md: "30px" }, fontWeight: "600" }}
+            sx={{ fontSize: { xs: "24px", md: "30px" }, fontWeight: "600" }}
             className="inter"
           >
             {title}
           </Typography>
-          <Typography
+          {/* <Typography
             component={"a"}
             href="/"
             sx={{
@@ -48,21 +52,33 @@ export const ProductCategory = ({ title }) => {
             className="inter"
           >
             See More
-          </Typography>
+          </Typography> */}
         </Box>
         <Box sx={{ my: 1 }}>
-          <Grid container>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={10}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.2,
+              },
+              500: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+              1440: {
+                slidesPerView: 4,
+              },
+            }}
+          >
             {MUSIC.slice(0, 4).map((item, key) => (
-              <Grid
-                item
-                size={3}
-                key={key}
-                sx={{ pl: key !== 0 && 1, pr: key !== 3 && 1 }}
-              >
+              <SwiperSlide key={key}>
                 <ProductCard music={item} />
-              </Grid>
+              </SwiperSlide>
             ))}
-          </Grid>
+          </Swiper>
         </Box>
       </Box>
     </>

@@ -1,13 +1,14 @@
 import { MUSIC } from "@/constant";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import { ProductCard } from "../Cards/ProductCard";
-
 //Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export const ProductCategory = ({ title }) => {
+  const isMobile = useMediaQuery("(max-width:500px)"); // Added 'px' unit
+
   return (
     <>
       <Box sx={{ mb: 10 }}>
@@ -19,7 +20,7 @@ export const ProductCategory = ({ title }) => {
           }}
         >
           <Typography
-            sx={{ fontSize: { xs: "24px", md: "30px" }, fontWeight: "600" }}
+            sx={{ fontSize: { xs: "28px", md: "30px" }, fontWeight: "600" }}
             className="inter"
           >
             {title}
@@ -54,32 +55,44 @@ export const ProductCategory = ({ title }) => {
             See More
           </Typography> */}
         </Box>
-        <Box sx={{ my: 1 }}>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={10}
-            breakpoints={{
-              0: {
-                slidesPerView: 1.2,
-              },
-              500: {
-                slidesPerView: 3,
-              },
-              1024: {
-                slidesPerView: 4,
-              },
-              1440: {
-                slidesPerView: 4,
-              },
-            }}
-          >
-            {MUSIC.slice(0, 4).map((item, key) => (
-              <SwiperSlide key={key}>
-                <ProductCard music={item} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Box>
+        {isMobile ? (
+          <Box sx={{ mx: -2 }}>
+            <Grid container>
+              {MUSIC.slice(0, 4).map((item, key) => (
+                <Grid item size={6} key={key} sx={{ p: 1 }}>
+                  <ProductCard music={item} />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        ) : (
+          <Box sx={{ my: 1 }}>
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={10}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.2,
+                },
+                500: {
+                  slidesPerView: 2.9,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+                1440: {
+                  slidesPerView: 4,
+                },
+              }}
+            >
+              {MUSIC.slice(0, 4).map((item, key) => (
+                <SwiperSlide key={key}>
+                  <ProductCard music={item} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Box>
+        )}
       </Box>
     </>
   );

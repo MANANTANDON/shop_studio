@@ -8,8 +8,8 @@ export const ProductCard = ({ music }) => {
     <>
       <Box
         sx={{
-          bgcolor: "#FFFFFF",
-          borderRadius: "28px",
+          bgcolor: "#F3F3F3",
+          borderRadius: { xs: "12px", md: "28px" },
           p: "7px",
           border: "1px solid #e8e8e8",
           // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
@@ -19,9 +19,9 @@ export const ProductCard = ({ music }) => {
           sx={{
             position: "relative",
             overflow: "hidden",
-            height: "277px",
+            height: { xs: "180px", md: "277px" },
             width: "100%",
-            borderRadius: "23px",
+            borderRadius: { xs: "10px", md: "23px" },
             border: "1px solid #e8e8e890",
           }}
         >
@@ -77,7 +77,7 @@ export const ProductCard = ({ music }) => {
                 textTransform: "none",
                 bgcolor: "#2D2636",
                 border: "1.5px solid #55515E",
-                borderRadius: "26px",
+                borderRadius: "7px",
                 color: "#FFFFFF",
                 fontWeight: "500",
                 my: 2,

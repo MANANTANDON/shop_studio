@@ -43,7 +43,15 @@ export const ProductCard = ({ music }) => {
           <Box sx={{ my: 1 }}>
             <Typography
               fontSize={{ xs: "16px", md: "18px" }}
-              sx={{ color: "#38344A", fontWeight: "600" }}
+              sx={{
+                color: "#38344A",
+                fontWeight: "600",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "-webkit-box",
+                WebkitLineClamp: "1",
+                WebkitBoxOrient: "vertical",
+              }}
               className="inter"
             >
               {music.name}

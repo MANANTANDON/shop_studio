@@ -1,13 +1,19 @@
 import { MUSIC } from "@/constant";
 import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ProductCard } from "../Cards/ProductCard";
 //Swiper imports
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export const ProductCategory = ({ title }) => {
-  const isMobile = useMediaQuery("(max-width:500px)"); // Added 'px' unit
+  const isMobile = useMediaQuery("(max-width:768px)"); // Added 'px' unit
+
+  const [shuffledMusic, setShuffledMusic] = useState(MUSIC);
+
+  useEffect(() => {
+    setShuffledMusic([...MUSIC].sort(() => Math.random() - 0.5));
+  }, []);
 
   return (
     <>
@@ -55,44 +61,15 @@ export const ProductCategory = ({ title }) => {
             See More
           </Typography> */}
         </Box>
-        {isMobile ? (
-          <Box sx={{ mx: -2 }}>
-            <Grid container>
-              {MUSIC.slice(0, 4).map((item, key) => (
-                <Grid item size={6} key={key} sx={{ p: 1 }}>
-                  <ProductCard music={item} />
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
-        ) : (
-          <Box sx={{ my: 1 }}>
-            <Swiper
-              slidesPerView={4}
-              spaceBetween={10}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1.2,
-                },
-                500: {
-                  slidesPerView: 2.9,
-                },
-                1024: {
-                  slidesPerView: 4,
-                },
-                1440: {
-                  slidesPerView: 4,
-                },
-              }}
-            >
-              {MUSIC.slice(0, 4).map((item, key) => (
-                <SwiperSlide key={key}>
-                  <ProductCard music={item} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </Box>
-        )}
+        <Box sx={{ mx: -2 }}>
+          <Grid container>
+            {shuffledMusic.map((item, key) => (
+              <Grid item size={{ xs: 6, sm: 4, md: 3 }} key={key} sx={{ p: 1 }}>
+                <ProductCard music={item} />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
       </Box>
     </>
   );

@@ -9,7 +9,7 @@ export const ProductCard = ({ music }) => {
       <Box
         sx={{
           bgcolor: "#F3F3F3",
-          borderRadius: { xs: "12px", md: "28px" },
+          borderRadius: "12px",
           p: "7px",
           border: "1px solid #e8e8e8",
           // boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
@@ -21,7 +21,7 @@ export const ProductCard = ({ music }) => {
             overflow: "hidden",
             height: { xs: "180px", md: "277px" },
             width: "100%",
-            borderRadius: { xs: "10px", md: "23px" },
+            borderRadius: "10px",
             border: "1px solid #e8e8e890",
           }}
         >
@@ -30,6 +30,7 @@ export const ProductCard = ({ music }) => {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
+            unoptimized
           />
         </Box>
         <Box sx={{ px: 1, pt: 2 }}>
@@ -38,7 +39,7 @@ export const ProductCard = ({ music }) => {
             sx={{ color: "#44444E80", fontWeight: "400" }}
             className="inter"
           >
-            {music.type}
+            {music?.type}
           </Typography>
           <Box sx={{ my: 1 }}>
             <Typography
@@ -54,14 +55,14 @@ export const ProductCard = ({ music }) => {
               }}
               className="inter"
             >
-              {music.name}
+              {music?.name}
             </Typography>
             <Typography
               fontSize={{ xs: "14px", md: "16px" }}
               sx={{ color: "#4B4950", fontWeight: "400" }}
               className="inter"
             >
-              <i>{music.artist}</i>
+              <i>{music?.artist}</i>
             </Typography>
           </Box>
           <Typography
@@ -76,9 +77,9 @@ export const ProductCard = ({ music }) => {
               fontSize: "12px",
             }}
           >
-            {music.description}
+            {music?.description}
           </Typography>
-          <a href={music.link}>
+          <a href={music?.link}>
             <Button
               className="inter"
               sx={{

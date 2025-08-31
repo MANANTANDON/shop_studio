@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <HomeLayout>
         <HeroContainer />
-        <ProductCategory title="Music" />
+        <ProductCategory title="CDs / Vinyls" />
       </HomeLayout>
     </>
   );

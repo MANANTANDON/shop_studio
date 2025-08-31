@@ -10,6 +10,7 @@ export const HeroContainer = () => {
           alignItems: "center",
           justifyContent: "center",
           flexDirection: "column",
+          my: 5,
         }}
       >
         <Typography

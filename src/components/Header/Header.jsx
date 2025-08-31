@@ -12,6 +12,8 @@ export const Header = () => {
           gap: 1,
           p: 2,
         }}
+        component={"a"}
+        href="/"
       >
         <Box
           sx={{
@@ -28,7 +30,7 @@ export const Header = () => {
           <StoreRounded fontSize="large" sx={{ color: "#FFFFFF" }} />
         </Box>
         <Typography
-          sx={{ fontSize: "24px", fontWeight: "600" }}
+          sx={{ fontSize: "24px", fontWeight: "600", color: "#080808" }}
           className="inter"
         >
           Shop.SnowchildStudio

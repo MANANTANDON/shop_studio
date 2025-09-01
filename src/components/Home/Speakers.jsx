@@ -1,13 +1,13 @@
-import { MUSIC } from "@/constant";
+import { SPEAKERS } from "@/constant";
 import { Box, Grid, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { ProductCard } from "../Cards/ProductCard";
+import { ProductsCard } from "../Cards/ProductsCard";
 
-export const ProductCategory = ({ title }) => {
-  const [shuffledMusic, setShuffledMusic] = useState(MUSIC);
+export const Speakers = ({ title }) => {
+  const [shuffledMusic, setShuffledMusic] = useState(SPEAKERS);
 
   useEffect(() => {
-    setShuffledMusic([...MUSIC].sort(() => Math.random() - 0.5));
+    setShuffledMusic([...SPEAKERS].sort(() => Math.random() - 0.5));
   }, []);
 
   return (
@@ -28,7 +28,7 @@ export const ProductCategory = ({ title }) => {
           </Typography>
           <Typography
             component={"a"}
-            href="/cd-vinyls"
+            href="/speakers"
             sx={{
               position: "relative",
               color: "#080808",
@@ -60,7 +60,7 @@ export const ProductCategory = ({ title }) => {
           <Grid container>
             {shuffledMusic.slice(0, 8).map((item, key) => (
               <Grid item size={{ xs: 6, sm: 4, md: 3 }} key={key} sx={{ p: 1 }}>
-                <ProductCard music={item} />
+                <ProductsCard item={item} />
               </Grid>
             ))}
           </Grid>

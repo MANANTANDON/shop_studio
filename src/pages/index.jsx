@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ProductCategory } from "../components/Home/ProductCategory";
 import { HomeLayout } from "@/components/Layout/HomeLayout";
 import { HeroContainer } from "@/components/Home/HeroContainer";
+import { Speakers } from "@/components/Home/Speakers";
 
 export default function Home() {
   return (
@@ -120,6 +121,7 @@ export default function Home() {
       </Head>
       <HomeLayout>
         <HeroContainer />
+        <Speakers title="Speakers" />
         <ProductCategory title="CDs / Vinyls" />
       </HomeLayout>
     </>

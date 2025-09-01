@@ -144,3 +144,42 @@ export const MUSIC = [
       "Limited double picture disc vinyl LP pressing. 2017 release, the sixth studio album from the pop singer/songwriter. Reputation is the long-awaited follow-up to her 2014 album 1989. The album's lead single, 'Look What You Made Me Do', was released on August 25, 2017. One of the leading contemporary recording artists, Taylor is known for narrative songs about her personal life, which have received widespread media coverage. As a songwriter, Swift has received awards from the Nashville Songwriters Association and the Songwriters Hall of Fame, and was included in Rolling Stone's 100 Greatest Songwriters of All Time in 2015. She is also the recipient of 10 Grammy Awards, five Guinness World Records, one Emmy Award, 21 Billboard Music Awards, 11 Country Music Association Awards, eight Academy of Country Music Awards, and one Brit Award. Swift is one of the best-selling music artists of all time, having sold more than 40 million albums-including 27.8 million in the US-and 130 million single downloads.",
   },
 ];
+
+export const SPEAKERS = [
+  {
+    type: "Speaker",
+    name: "Xiaomi Sound Outdoor Speaker (Black) | |30W Hi-Quality Speaker with Mic|Upto 12hrs Playback Time|IP67 Waterproof & Type C|Wireless Stereo Pairing|Speaker for Home, Outdoor & Travel Purpose",
+    brand: "XIAOMI",
+    img: "/images/speakers/1.jpg",
+    link: "https://amzn.to/46fIUGK",
+    description:
+      "You can play your favourite tunes with the Xiaomi Mi QBH4290IN Portable Bluetooth Speaker. Boasting an eye-catching design and high audio quality, this speaker is ideal for your portable audio needs. And, with IP67 water and dust resistance, this speaker ensures uninterrupted music playback in various weather conditions. Moreover, sporting a one-tap sync feature, this speaker lets you wirelessly connect up to two speakers for an immersive stereo surround sound experience.]",
+  },
+  {
+    type: "Speaker",
+    name: "Amazon Echo Dot (5th Gen) | Smart speaker with Bigger sound, Motion Detection, Temperature Sensor, Alexa and Bluetooth| Blue",
+    brand: "Amazon",
+    img: "/images/speakers/2.jpg",
+    link: "https://amzn.to/4lSvKUM",
+    description:
+      "5th (Latest) Generation Echo Dot with Alexa-The best sounding Echo Dot yet! With deeper bass and clearer vocals than all previous generations. Just ask Alexa to play music from Amazon Music, Spotify, Jio Saavn, Apple Music.(some apps may require subscription) Voice control Alexa compatible smart appliances like lights, ACs, TVs, geysers. Extend the experience to non-smart appliances using smart plugs (to be purchased separately) Automatically turn on light when you enter the room or switch on the AC when it gets hot using in-built motion detection and temperature sensor. Set these experiences using routines feature in Alexa app. Manage your day better by just asking Alexa to set reminders, pay bills, add items to shopping list and much more. Alexa can speak English and Hindi. Pause/resume music, snooze alarms, dismiss timers with just a tap. Use Echo Dot as a standalone speaker or pair your phone to use it as a Bluetooth speaker. Echo Dot comes with multiple privacy controls, including a mic off button.",
+  },
+  {
+    type: "Speaker",
+    name: "JBL Go 4, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, Vibrant Colors, Water & Dust Proof, Type C (Without Mic, Black)",
+    brand: "JBL",
+    img: "/images/speakers/3.jpg",
+    link: "https://amzn.to/4mJ5LQU",
+    description:
+      "Ultra-portable JBL Pro Sound . The JBL Go 4 packs a serious musical punch, delivering big JBL Pro Sound with punchy bass. Your friends won’t believe how much great JBL Pro Sound comes out of such a small speaker Up to 7 hours of playtime plus 2 hours with Playtime Boost JBL Go 4 gives you up to 7 hours of playtime on a single charge. Simply tap Playtime Boost to prolong the playtime, adding up to 2 hours to your battery life. It tunes and optimizes the performance for louder and crisper sound. Waterproof and dustproof: The JBL Go 4’s IP67 waterproof and dustproof rating ensures this portable speaker can handle almost any environment, from a poolside party to a seaside picnic Multi-speaker connection by Auracast : Want even bigger JBL Pro Sound? Pair two Go4s for stereo sound, or wirelessly connect multiple JBL Auracast-enabled speakers using Auracast for even bigger sound JBL Portable app Use the JBL Portable app to receive updates, get product support, and unlock features, all straight from your phone. Fine-tune your sound with multiple EQ presets options. Or use the fully customizable equalizer to adjust highs, mids, and lows—so your music is just right for you",
+  },
+  {
+    type: "Speaker",
+    name: "Mivi Play Bluetooth Speaker with 12 Hours Playtime. Wireless Speaker Made in India with Exceptional Sound Quality, Portable and Built in Mic-Black",
+    brand: "MIVI",
+    img: "/images/speakers/4.jpg",
+    link: "https://amzn.to/428rQzQ",
+    description:
+      "Studio Grade Sound: The Mivi Play Bluetooth speaker delivers a deep and powerful sound with a solid bass to amplify your beats and make you fall in love with every note. Play it non-stop: The Mivi Play wireless speaker packs a battery life of up to 12 long hours on a single charge to keep your party going on and on till the break of dawn. Premium Brag Worthy Design: The Mivi Play portable wireless speaker comes with a sleek design, that makes it numero uno choice for those who love their music in private or with a couple friends! Connections made stronger: Nobody likes it when their music gets interrupted. Mivi Play’s latest and advanced Bluetooth 5.0 lets you enjoy seamless wireless connectivity, keeping your connections strong and uninterrupted. Now that’s the next generation of wireless bluetooth speakers! Made in India : From design to manufacturing, Mivi Play is a portable wireless speaker proudly made in India. It is built locally to compete globally. 1 year warranty from the date of purchase, Easy responsive controls change music tracks and control volume",
+  },
+];

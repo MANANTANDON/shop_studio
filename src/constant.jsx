@@ -182,4 +182,40 @@ export const SPEAKERS = [
     description:
       "Studio Grade Sound: The Mivi Play Bluetooth speaker delivers a deep and powerful sound with a solid bass to amplify your beats and make you fall in love with every note. Play it non-stop: The Mivi Play wireless speaker packs a battery life of up to 12 long hours on a single charge to keep your party going on and on till the break of dawn. Premium Brag Worthy Design: The Mivi Play portable wireless speaker comes with a sleek design, that makes it numero uno choice for those who love their music in private or with a couple friends! Connections made stronger: Nobody likes it when their music gets interrupted. Mivi Play’s latest and advanced Bluetooth 5.0 lets you enjoy seamless wireless connectivity, keeping your connections strong and uninterrupted. Now that’s the next generation of wireless bluetooth speakers! Made in India : From design to manufacturing, Mivi Play is a portable wireless speaker proudly made in India. It is built locally to compete globally. 1 year warranty from the date of purchase, Easy responsive controls change music tracks and control volume",
   },
+  {
+    type: "Speaker",
+    name: "Sony SRS-XB100 Wireless Bluetooth Portable Lightweight Super-Compact Travel Speaker, Extra-Durable IP67 Waterproof & Dustproof, 16 Hrs Batt, Versatile Strap, Extra Bass & Hands-Free Calling-Black",
+    brand: "Sony",
+    img: "/images/speakers/5.jpg",
+    link: "https://amzn.to/47TONKQ",
+    description:
+      "Extra Bass : EXTRA BASS for deep, punchy sound Sound : Sound Diffusion Processor expands sound far and wide Ratings : Waterproof and dustproof (IP67 rated) Battery Life : Up to 16 hours of battery life with indicator Portable : Compact portable design with multiway strap included",
+  },
+  {
+    type: "Speaker",
+    name: "JBL Clip 5, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, 12hrs of Playtime, Integrated Carabiner, Vibrant Colors with Rugged Fabric Design, Dust & Waterproof, Type C (Without Mic, White)",
+    brand: "JBL",
+    img: "/images/speakers/6.jpg",
+    link: "https://amzn.to/45Ya9nJ",
+    description:
+      "Ultra-portable JBL Pro Sound :The JBL Clip 5 packs a serious musical punch, delivering big JBL Pro Sound with punchy bass Redesigned carabiner :The completely redesigned, fully integrated carabiner has a much wider opening that makes it even more portable. You can attach the Clip 5 to everything from your backpack to your belt loop, and take your music with you all day, everywhere Up to 12 hours of playtime plus 3 hours with Playtime Boost : JBL Clip 5 gives you up to 12 hours of playtime on a single charge. Simply tap Playtime Boost to prolong the playtime, adding up to 3 hours to your battery life. It tunes and optimizes the performance for louder and crisper sound Multi-speaker connection by Auracast : Want even bigger JBL Pro Sound? Pair two Clip 5s for stereo sound, or wirelessly connect multiple JBL Auracast-enabled speakers using Auracast for even bigger sound Waterproof and dustproof : The JBL Clip 5’s IP67 waterproof and dustproof rating ensures this portable speaker can handle almost any environment, from a poolside party to a seaside picnic",
+  },
+  {
+    type: "Speaker",
+    name: "Anker SoundCore Sport XL 16 Watt Wireless Bluetooth Portable Speaker",
+    brand: "Anker",
+    img: "/images/speakers/7.jpg",
+    link: "https://amzn.to/41wqyi4",
+    description:
+      "Dynamic Stereo: Enjoy crisp, energetic sound with impressive, powered by 2 x 8W stereo drivers with remarkable frequency response. Sublime bass is by dual passive subwoofers; Tough Tech: Tough Bluetooth speakers. IP67 waterproof (1m depth) and dust-tight. Shock resistant. Bluetooth 4. 1: Advanced Bluetooth tech an extended 66ft range (outside) so you can take your phone further without losing connection and make hands-free calls with the built-in noise-canceling mic. Breakthrough Battery Performance: 15-hour playtime from the built-in, high-capacity lithium-ion battery (with Anker's industry-leading power management) keeps your music playing all day, non-stop. You can even charge your phone or tablet with the charging port. Playtime varies according to level and audio content. What You Get: SoundCore Sport XL, Micro USB cable, hand strap, welcome guide, our worry-free 18-month warranty and friendly. Battery Average Life: 15 hours; Is Waterproof: True; Model: A3181g11.",
+  },
+  {
+    type: "Speaker",
+    name: "Creative Stage SE mini Compact Under-Monitor Soundbar with Bluetooth 5.3, USB Digital Audio, for PC and Mobile",
+    brand: "Creative",
+    img: "/images/speakers/8.jpg",
+    link: "https://amzn.to/4p2Lze6",
+    description:
+      "UNDER-MONITOR SOUNDBAR FOR COMPUTER – Designed to fit perfectly under a desktop monitor, the low-profile soundbar is powered by USB for a clutter-free desktop setup POWERFUL AUDIO WITH NEODYMIUM DRIVERS – Creative Stage SE mini houses custom-tuned drivers that deliver impressive audio experiences in the comfort of your room FUSS-FREE CONNECTIVITY – The Creative Stage SE mini offers high-quality USB audio and wireless Bluetooth 5.3 audio streaming. Enjoy audio entertainment while plugged into your PC or mobile EQUIPPED WITH 3-POLE HEADPHONES OUTPUT – Plug in your headphones and continue your gaming or movie sessions privately, no matter the time or day CONVENIENCE AT YOUR FINGERTIPS – The volume control knob and source buttons are conveniently located at the side of the soundbar for easy reach and hassle-free control",
+  },
 ];
